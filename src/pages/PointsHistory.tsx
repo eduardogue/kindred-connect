@@ -1,14 +1,14 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, ArrowUp, ArrowDown, ChevronRight } from "lucide-react";
-import { pointsHistory } from "@/data/products";
 import { useCart } from "@/contexts/CartContext";
+import { PointsHistoryItem } from "@/data/products";
 
 const PointsHistory = () => {
   const navigate = useNavigate();
-  const { userPoints } = useCart();
+  const { userPoints, history } = useCart();
 
   // Group by month
-  const grouped = pointsHistory.reduce<Record<string, typeof pointsHistory>>((acc, item) => {
+  const grouped = history.reduce<Record<string, PointsHistoryItem[]>>((acc, item) => {
     if (!acc[item.month]) acc[item.month] = [];
     acc[item.month].push(item);
     return acc;
