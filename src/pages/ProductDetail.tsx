@@ -58,7 +58,7 @@ const ProductDetail = () => {
               </linearGradient>
             </defs>
           </svg>
-          <span className="text-[80px] leading-none z-10">{product.image}</span>
+          <img src={product.image} alt={product.name} className="w-32 h-32 object-contain z-10" />
         </div>
       </div>
 
