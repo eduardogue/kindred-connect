@@ -1,3 +1,15 @@
+import molhoBarbecue from "@/assets/products/molho-barbecue.png";
+import molhoRanch from "@/assets/products/molho-ranch.png";
+import molhoCaipira from "@/assets/products/molho-caipira.png";
+import casquinha from "@/assets/products/casquinha.png";
+import sundae from "@/assets/products/sundae.png";
+import cappuccino from "@/assets/products/cappuccino.png";
+import mccolossoChocolate from "@/assets/products/mccolosso-chocolate.png";
+import mccolossoCaramelo from "@/assets/products/mccolosso-caramelo.png";
+import bigMac from "@/assets/products/big-mac.png";
+import mcofertaBigmac from "@/assets/products/mcoferta-bigmac.png";
+import mcofertaQuarter from "@/assets/products/mcoferta-quarter.png";
+
 export interface Product {
   id: number;
   name: string;
@@ -8,17 +20,17 @@ export interface Product {
 }
 
 export const products: Product[] = [
-  { id: 1, name: "Molho Barbecue", points: 4000, category: "6000", description: "Escolha seu molho favorito para se deliciar com os chicken McNuggets, ou se preferir, com as deliciosas e crocantes McFritas", image: "🫕" },
-  { id: 2, name: "Molho Ranch", points: 4000, category: "6000", description: "Molho cremoso Ranch perfeito para acompanhar seus McNuggets ou McFritas", image: "🥣" },
-  { id: 3, name: "Molho Caipira", points: 4000, category: "6000", description: "Molho Caipira com sabor especial para seus acompanhamentos favoritos", image: "🍵" },
-  { id: 4, name: "Casquinha", points: 3000, category: "6000", description: "A clássica casquinha McDonald's cremosa e deliciosa", image: "🍦" },
-  { id: 5, name: "Sundae", points: 5000, category: "6000", description: "Sundae cremoso com calda à sua escolha", image: "🍨" },
-  { id: 6, name: "Cappuccino 200ml", points: 12000, category: "18000", description: "Cappuccino quentinho de 200ml para aquecer seu dia", image: "☕" },
-  { id: 7, name: "McColosso Calda de Chocolate", points: 13000, category: "18000", description: "McColosso com calda de chocolate irresistível", image: "🍦" },
-  { id: 8, name: "McColosso Caramelo", points: 13000, category: "18000", description: "McColosso com calda de caramelo cremoso", image: "🍦" },
-  { id: 9, name: "Big Mac", points: 15000, category: "25000", description: "O hambúrguer mais famoso do mundo com dois andares", image: "🍔" },
-  { id: 10, name: "McOferta Big Mac", points: 25000, category: "25000", description: "McOferta completa com Big Mac, batata e bebida", image: "🍔" },
-  { id: 11, name: "McOferta Quarter", points: 40000, category: "45000", description: "McOferta completa com Quarterão, batata e bebida", image: "🍔" },
+  { id: 1, name: "Molho Barbecue", points: 4000, category: "6000", description: "Escolha seu molho favorito para se deliciar com os chicken McNuggets, ou se preferir, com as deliciosas e crocantes McFritas", image: molhoBarbecue },
+  { id: 2, name: "Molho Ranch", points: 4000, category: "6000", description: "Molho cremoso Ranch perfeito para acompanhar seus McNuggets ou McFritas", image: molhoRanch },
+  { id: 3, name: "Molho Caipira", points: 4000, category: "6000", description: "Molho Caipira com sabor especial para seus acompanhamentos favoritos", image: molhoCaipira },
+  { id: 4, name: "Casquinha", points: 3000, category: "6000", description: "A clássica casquinha McDonald's cremosa e deliciosa", image: casquinha },
+  { id: 5, name: "Sundae", points: 5000, category: "6000", description: "Sundae cremoso com calda à sua escolha", image: sundae },
+  { id: 6, name: "Cappuccino 200ml", points: 12000, category: "18000", description: "Cappuccino quentinho de 200ml para aquecer seu dia", image: cappuccino },
+  { id: 7, name: "McColosso Calda de Chocolate", points: 13000, category: "18000", description: "McColosso com calda de chocolate irresistível", image: mccolossoChocolate },
+  { id: 8, name: "McColosso Caramelo", points: 13000, category: "18000", description: "McColosso com calda de caramelo cremoso", image: mccolossoCaramelo },
+  { id: 9, name: "Big Mac", points: 15000, category: "25000", description: "O hambúrguer mais famoso do mundo com dois andares", image: bigMac },
+  { id: 10, name: "McOferta Big Mac", points: 25000, category: "25000", description: "McOferta completa com Big Mac, batata e bebida", image: mcofertaBigmac },
+  { id: 11, name: "McOferta Quarter", points: 40000, category: "45000", description: "McOferta completa com Quarterão, batata e bebida", image: mcofertaQuarter },
 ];
 
 export const categories = ["Até 6.000 pts", "Até 18.000 pts", "Até 25.000 pts", "Até 45.000 pts"];

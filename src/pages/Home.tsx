@@ -39,7 +39,7 @@ const ProductCard = ({ product, onClick }: { product: typeof products[0]; onClic
         {product.points.toLocaleString("pt-BR")} pts
       </div>
       {/* Product emoji */}
-      <span className="text-[64px] leading-none z-10">{product.image}</span>
+      <img src={product.image} alt={product.name} className="w-16 h-16 object-contain z-10" />
     </div>
     {/* Product name */}
     <p className="text-sm text-foreground text-left leading-tight">{product.name}</p>
