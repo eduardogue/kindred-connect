@@ -46,7 +46,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
 
   const [userPoints, setUserPoints] = useState<number>(() => {
     const saved = localStorage.getItem("mcdonalds-points");
-    return saved ? JSON.parse(saved) : 42350;
+    return saved ? JSON.parse(saved) : 50000;
   });
 
   const [history, setHistory] = useState<PointsHistoryItem[]>(() => {
