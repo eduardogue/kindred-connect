@@ -94,7 +94,6 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
       type: "spent",
     };
     setHistory((prev) => [newEntry, ...prev]);
-    setUserPoints((prev) => prev - totalPoints);
     clearCart();
   };
 
