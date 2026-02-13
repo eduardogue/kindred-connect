@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft, MapPin, ChevronRight } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
+import mapLocation from "@/assets/map-location.jpeg";
 
 const OrderConfirm = () => {
   const navigate = useNavigate();
@@ -23,10 +24,8 @@ const OrderConfirm = () => {
       <h1 className="text-2xl font-bold text-foreground px-4 mb-4">Payment detail</h1>
 
       {/* Map placeholder */}
-      <div className="w-full h-[160px] bg-muted flex items-center justify-center relative">
-        <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center shadow-md">
-          <span className="text-sm">👤</span>
-        </div>
+      <div className="w-full h-[160px] relative overflow-hidden">
+        <img src={mapLocation} alt="Localização no mapa" className="w-full h-full object-cover" />
       </div>
 
       {/* Pick up at */}
