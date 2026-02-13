@@ -41,12 +41,6 @@ const OrderSuccess = () => {
           transform: showDetails ? "translateY(0)" : "translateY(20px)",
         }}
       >
-        {/* Order number */}
-        <div className="bg-muted rounded-xl p-4 mb-4 text-center">
-          <p className="text-xs text-muted-foreground mb-1">Número do pedido</p>
-          <p className="text-2xl font-bold text-foreground tracking-wider">#4832</p>
-        </div>
-
         {/* Pickup info */}
         <div className="border border-border rounded-xl p-4 mb-4">
           <div className="flex items-center gap-2 mb-3">
@@ -72,8 +66,7 @@ const OrderSuccess = () => {
           <p className="text-sm font-bold text-foreground mb-3">Próximos passos</p>
           <div className="space-y-3">
             <Step number={1} text="Vá até o restaurante selecionado" />
-            <Step number={2} text="Informe o número do pedido no caixa" />
-            <Step number={3} text="Retire seu pedido e aproveite!" />
+            <Step number={2} text="Retire seu pedido e aproveite!" />
           </div>
         </div>
       </div>
